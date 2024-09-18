@@ -1,3 +1,4 @@
+/* Base styles for desktop */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -46,7 +47,6 @@ main {
     justify-content: center;
     padding: 20px;
     width: 75%;
-    /* border: 2px solid red; */
 }
 
 #videos-container {
@@ -58,7 +58,6 @@ main {
 }
 
 .video-card {
-    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -109,4 +108,49 @@ main {
 
 #load-more-btn:hover {
     background-color: #0056b3;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header input {
+        width: 200px;
+    }
+
+    header button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .video-card {
+        width: calc(50% - 20px); /* Two cards per row on mobile */
+    }
+
+    .video-title {
+        font-size: 12px;
+    }
+
+    .video-description {
+        font-size: 10px;
+    }
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+    header input {
+        width: 100%;
+    }
+
+    header button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .video-card {
+        width: 100%; /* Full width for one card per row */
+    }
 }
