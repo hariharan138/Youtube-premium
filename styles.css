@@ -12,21 +12,21 @@ body {
 }
 
 header {
+    align-items: center;
+    background-color: black;
     display: flex;
     justify-content: center;
     padding: 20px;
-        background-color: black;
     width: 100%;
-/*     background-color: #fff; */
+    /* background-color: #fff; */
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 header input {
-/*         background-color: black; */
     width: 300px;
     padding: 10px;
     border: 1px solid #ddd;
-/*     border-radius: 5px; */
+    /* border-radius: 5px; */
     margin-right: 10px;
 }
 
@@ -36,6 +36,7 @@ header button {
     background-color: #007bff;
     color: white;
     font-size: 16px;
+    /* border-radius: 5px; */
     cursor: pointer;
 }
 
