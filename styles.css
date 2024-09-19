@@ -68,7 +68,9 @@ main {
     width: calc(33.333% - 20px); /* Width for three cards per row with gap */
     cursor: pointer;
     transition: box-shadow 0.3s, transform 0.3s;
-    background-color: #fff;
+    background-color: black;
+     color: white;
+
 }
 
 .video-card:hover {
