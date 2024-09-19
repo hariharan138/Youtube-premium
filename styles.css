@@ -8,12 +8,15 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+        background-color: black;
 }
 
 header {
     display: flex;
     justify-content: center;
     padding: 20px;
+        background-color: black;
+
     width: 100%;
     background-color: #fff;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
@@ -153,4 +156,27 @@ main {
     .video-card {
         width: 100%; /* Full width for one card per row */
     }
+}
+#search-bar{
+ border: 2px solid #272727;
+    background-color: black;
+    color: white;
+  width: 410px;
+  /* border-radius: 20px; */
+  /* position: relative; */
+  /* padding: 5px; */
+  /* border: none; */
+  flex-wrap: ;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#search-btn{
+    height: 39px;
+    position:relative;
+    right: 0.7%;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #272727;
+    background-color: #272727;
 }
