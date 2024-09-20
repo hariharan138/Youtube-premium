@@ -36,7 +36,7 @@ async function searchYouTube(query, pageToken = '') {
     try {
         const response = await fetch(url);
         const data = await response.json();
-
+        console.log(data);
         if (data.items.length > 0) {
             displayVideos(data.items);
             nextPageToken = data.nextPageToken;
@@ -49,13 +49,43 @@ async function searchYouTube(query, pageToken = '') {
         alert('Failed to fetch videos.');
     }
 }
+function url1(){
+    window.open("https://www.yout-ube.com/watch?v=IJq0yyWug1k", '_blank');
+}
+function url2(){
+    window.open("https://www.yout-ube.com/watch?v=eDqfg_LexCQ", '_blank');
+}
+function url3(){
+    window.open("https://www.yout-ube.com/watch?v=3wDiqlTNlfQ", '_blank');
+}
+function url4(){
+    window.open("https://www.yout-ube.com/watch?v=aFsGDcy-6hc&t=21s", '_blank');
+}
+function url5(){
+    window.open("https://www.yout-ube.com/watch?v=BddP6PYo2gs", '_blank');
 
+}
+function url6(){
+    window.open("https://www.yout-ube.com/watch?v=EhhiY11Z9-U", '_blank');
+
+}
+function url7(){
+    window.open("https://www.yout-ube.com/watch?v=TcMBFSGVi1c", '_blank');
+}
+function url8(){
+    window.open("https://www.yout-ube.com/watch?v=RgOEKdA2mlw", '_blank');
+}
+function url9(){
+    window.open("https://www.yout-ube.com/watch?v=RLzC55ai0eo", '_blank');
+}
 function displayVideos(videos) {
     videosContainer.innerHTML = '';
 
-    videos.forEach(video => {
+    videos.map(video => {
         const videoId = video.id.videoId;
         const videoTitle = video.snippet.title;
+        console.log(video);
+        
         const videoDescription = video.snippet.description;
         const videoThumbnail = video.snippet.thumbnails.high.url;
 
@@ -86,7 +116,6 @@ function displayVideos(videos) {
         videoCard.appendChild(infoDiv);
 
         videoCard.onclick = () => window.open(videoUrl, '_blank');
-
         videosContainer.appendChild(videoCard);
     });
 }
