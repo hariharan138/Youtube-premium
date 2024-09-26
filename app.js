@@ -32,7 +32,7 @@ loadMoreBtn.addEventListener('click', async function() {
 });
 
 async function searchYouTube(query, pageToken = '') {
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&q=${encodeURIComponent(query)}&type=video&key=${apiKey}${pageToken ? `&pageToken=${pageToken}` : ''}`;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&q=${encodeURIComponent(query)}&type=video&key=${apiKey}${pageToken ? `&pageToken=${pageToken}` : ''}`;
     try {
         const response = await fetch(url);
         const data = await response.json();
