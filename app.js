@@ -1,4 +1,4 @@
-const apiKey = 'AIzaSyAN6iiDk4mm-uynhzQi66rZEA8Mnb3Pw5o';
+const apiKey ='AIzaSyC8rIjU1vBfUFWcB1U2tJ1MxFvzvenZkO8';
 const searchBtn = document.getElementById('search-btn');
 const searchBar = document.getElementById('search-bar');
 const videosContainer = document.getElementById('videos-container');
